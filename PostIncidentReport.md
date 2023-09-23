@@ -2,9 +2,15 @@
 
 We committed a new change to our deployment repository, creating a version 2 of our URL Shortener application. After deploying the update, our application broke. There was an “Internal Server Error” when trying to complete a core function of the application - creating a shortened URL.
 
+<img width="989" alt="error 2" src="https://github.com/nalDaniels/Dep3.1/assets/135375665/e012ed0f-c6dd-4666-bc58-a39443aba365">
+
+
 # The Error:
 
 The error was the result of an overloaded server or issue with the application code. Upon looking at the logs, it was clear that there was a problem with one of the JSON methods used in the code.
+
+<img width="966" alt="logs" src="https://github.com/nalDaniels/Dep3.1/assets/135375665/19436e9e-7556-4a24-b2c1-dfabc4162290">
+
 
 # The Resolution:
 
