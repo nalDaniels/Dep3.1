@@ -30,7 +30,11 @@ Since we are only afforded 20 minutes of downtime per year, it is imperative tha
 
 # Additional Steps to Prevent Future Application Errors:
 
-To avoid this reoccurring in the future, we can have senior engineers review the code, which should be in a separate branch, before it gets pulled into the main deployment branch. You  can also optimize this process by testing the code separately with a potential input (URL) before the pull request is made to the main branch  We can also run integration tests during our Jenkins (just build and test stages) pipeline to ensure that any errors will arise before the deployment of the new commit.
+To avoid this reoccurring in the future, we can have senior engineers review the code, before it gets pulled into the main deployment branch. You  can also optimize this process by testing the code separately with a potential input (URL) before the pull request is made to the main branch  We can also run integration tests during our Jenkins (just build and test stages) pipeline to ensure that any errors will arise before the deployment of the new commit. New updates should exist and be tested in a separate branch until it has passed unit and integration tests. 
+
+To minimize downtime, we should always rollback. However, it is important to note that other files outside of the application.py file may have changes as well.
+
+If there
 
 # Process
 ![Deployment 3 1 drawio](https://github.com/nalDaniels/Dep3.1/assets/135375665/89248636-51ba-4d16-9634-b29f86fdce02)
